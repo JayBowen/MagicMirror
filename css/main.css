@@ -181,6 +181,24 @@ html {
   text-align: right;
 }
 
+.bus-table {
+  font-size: 14px;
+  line-height: 20px;
+  margin-top: 40px;
+}
+
+.bus-table .bus-icon {
+  width: 1em;
+  min-width: 1em;
+  margin-right: 5px;
+  text-align: center;
+}
+
+.bus-table .days {
+  padding-left: 20px;
+  text-align: right;
+}
+
 .dishwasher {
   background-color: white;
   color: black;

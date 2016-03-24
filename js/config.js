@@ -1,5 +1,5 @@
 var config = {
-    lang: 'nl',
+    lang: 'en',
     time: {
         timeFormat: 12,
         displaySeconds: true,
@@ -9,12 +9,17 @@ var config = {
         //change weather params here:
         //units: metric or imperial
         params: {
-            q: 'Baarn,Netherlands',
+            q: 'Dublin, Ireland',
             units: 'metric',
             // if you want a different lang for the weather that what is set above, change it here
-            lang: 'nl',
-            APPID: 'YOUR_FREE_OPENWEATHER_API_KEY'
+            lang: 'en',
+            APPID: 'a2f5d885c9215aa79104df122fb23872'
         }
+    },
+    bus:{
+    	apiURL: 'https://data.dublinked.ie/cgi-bin/rtpi/realtimebusinformation?stopid=<!stopNum!>&format=json',
+    	stop: '274',
+    	interval: 60000
     },
     compliments: {
         interval: 30000,
@@ -42,11 +47,11 @@ var config = {
         urls: [
 		{
 			symbol: 'calendar-plus-o', 
-			url: 'https://p01-calendarws.icloud.com/ca/subscribe/1/n6x7Farxpt7m9S8bHg1TGArSj7J6kanm_2KEoJPL5YIAk3y70FpRo4GyWwO-6QfHSY5mXtHcRGVxYZUf7U3HPDOTG5x0qYnno1Zr_VuKH2M'
+			url: 'https://p05-calendarws.icloud.com/ca/subscribe/1/zyTzEAtIciMW8lQVCMnNOXJv4B37ze4KWIHNxPC4-VtDZYXRxuYi0o8BQvTZ0dt8'
 		},
 		{
 			symbol: 'soccer-ball-o',
-			url: 'https://www.google.com/calendar/ical/akvbisn5iha43idv0ktdalnor4%40group.calendar.google.com/public/basic.ics',
+			url: 'https:/p05-calendarws.icloud.com/ca/subscribe/1/zyTzEAtIciMW8lQVCMnNOXJv4B37ze4KWIHNxPC4-VtDZYXRxuYi0o8BQvTZ0dt8',
 		},
 		// {
 			// symbol: 'mars',
@@ -63,6 +68,6 @@ var config = {
 		]
     },
     news: {
-        feed: 'http://www.nytimes.com/services/xml/rss/nyt/HomePage.xml'
+        feed: 'https://www.irishtimes.com/cmlink/news-1.1319192'
     }
 }

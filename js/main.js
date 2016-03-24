@@ -51,7 +51,7 @@ jQuery(document).ready(function($) {
 
 	calendar.init();
 
-	compliments.init();
+	bus.init();
 
 	weather.init();
 
