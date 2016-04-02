@@ -18,27 +18,10 @@ var config = {
     },
     bus:{
     	apiURL: 'https://data.dublinked.ie/cgi-bin/rtpi/realtimebusinformation?stopid=<!stopNum!>&format=json',
-    	stop: '274',
-    	interval: 60000
-    },
-    compliments: {
-        interval: 30000,
-        fadeInterval: 4000,
-        morning: [
-            'Good morning, handsome!',
-            'Enjoy your day!',
-            'How was your sleep?'
-        ],
-        afternoon: [
-            'Hello, beauty!',
-            'You look sexy!',
-            'Looking good today!'
-        ],
-        evening: [
-            'Wow, you look hot!',
-            'You look nice!',
-            'Hi, sexy!'
-        ]
+    	titleApiUrl: 'https://data.dublinked.ie/cgi-bin/rtpi/busstopinformation?stopid=<!stopNum!>&format=json',
+    	stop: '4745',
+    	interval: 60000,
+    	logo: 'img/dbus_logo.png'
     },
     calendar: {
         maximumEntries: 10, // Total Maximum Entries
